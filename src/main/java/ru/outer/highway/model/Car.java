@@ -1,5 +1,8 @@
 package ru.outer.highway.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car implements Transport{
     @Override
     public String trafficType(){

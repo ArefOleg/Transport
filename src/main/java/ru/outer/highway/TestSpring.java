@@ -25,7 +25,12 @@ public class TestSpring {
         /*Transport transport = context.getBean("someAirplane", Airplane.class);
         HighWay highWay = new HighWay(transport);
         highWay.moveTransport();*/
-        
+
+        /*HighWay highWay = context.getBean("highWay", HighWay.class);
+        highWay.moveTransport();*/
+
+        TransportSystem transportSystem = context.getBean("transportSystem", TransportSystem.class);
+        System.out.println(transportSystem.toString());
         context.close();
     }
 }
